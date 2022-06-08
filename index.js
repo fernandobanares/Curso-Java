@@ -122,14 +122,14 @@ while(entrada !== 'salir'){
 
 /* desafio */
  /* Tomar i & y para crear una tabla de multiplicacion */
-let numero = prompt('ingresa numero')
+/* let numero = prompt('ingresa numero')
 for (let i = 1; i <= 12; i++){
     let resultado = i * numero
     console.log('El Resultado es: '+ resultado)
         alert('El resultado es : '+ resultado)     
     }
 console.log('Finalizado')
-
+ */
 /* function saludar (){
     console.log ('Hola Estudiantes')
 }
@@ -142,8 +142,8 @@ alert('Nombre ingresado: '+ nombre)
 function solititarNombre() {
     let nombre = prompt('Ingresar Nombre')
     alert('Nombre ingresado: '+ nombre) 
-} */
-
+}
+ */
 /* function solititarNombre(nombre) {
     alert('Nombre ingresado: '+ nombre)
 }
@@ -243,15 +243,156 @@ function calculadora(numeroA,numeroB,operacion)
     persona["age"] = 30
     console.log(persona); */
 
-    function Persona(name,age,adress){
+    /* function Persona(name,age,adress){
         //propiedad = valor
         this.name = name
         this.edad = age
         this.direccion = adress
         this.pais = 'USA'
-        this.cumpleaños = 0
+        this.cumpleaños = ''
     }
 
     const homero = new Persona('Homero',40,'Av Siempreviva 742')
 
-    console.log(homero)
+    console.log(homero) */
+
+    // Clases
+
+/* const IVA = 18
+function Producto (name, price, description){
+    this.name = name
+    this.price = price
+    this.description = description
+    this.clculatePriceIVA = () => { return (this.price) + ((this.price * IVA) / 100)}
+}
+class Product{
+    constructor(name, price, description){
+        this.name = name
+        this.price = price
+        this.description = description
+    }
+    calculatePriceIVA(){
+        return(this.price) + ((this.price * IVA) / 100)
+    }
+    getName(){
+        return this.name
+    }
+    getPrice(){
+        return this.price
+    }
+}
+
+const arroz = new Product ('Arroz chaufan', 3.5,'Arroz..')
+console.log(arroz.name)
+console.log(arroz.price)
+console.log(arroz.calculatePriceIVA())
+
+const azucar = new Product ('Azucar rubia', 3, 'Azucar..')
+console.log(azucar.name)
+console.log(azucar.price)
+console.log(azucar.calculatePriceIVA())
+ */
+// Clase 6 Arrays o listas //
+
+/* const lista = [1,2,3,4,5]
+let a = lista[0]
+let b = lista[2]
+console.log(lista[0])
+console.log(lista[1]) */
+
+/* const lista = [1,false,'A','Alex',25, { name: 'Coderhouse'}, [1,2,3]]
+for (let index = 0; index < 7; index++){
+    console.log('Lista: '+ lista[index])
+} */
+
+/* console.log(lista.length) */
+
+//Agregar elementos push y unshift
+
+/* const array = [1,2,3]
+
+console.log(array)
+array.push('10')
+console.log(array)
+array.unshift('A')
+console.log(array) */
+
+//Retirar elementos push y pop
+
+/* const array = [1,2,3]
+
+console.log(array)
+array.push('10')
+console.log(array)
+array.unshift('A')
+console.log(array)
+array.shift()
+console.log(array)
+array.pop()
+console.log(array) */
+
+// Splice -- eliminar valores de una lista
+
+/* const lista = [1,false,'A','Alex',25, { name: 'Coderhouse'}, [1,2,3]]
+
+console.log(lista)
+lista.splice(2,3)
+console.log(lista) */
+
+// Join--generar un string con los parametros del array
+/* const lista = [1,false,'A','Alex',25, { name: 'Coderhouse'}, [1,2,3]] */
+/* console.log(lista.join('--')) */
+
+// Concat-- Combinar dos arrays en un único array
+/* const perros = ['olf', 'caca']
+const gatos = ['mishi', 'diana', 'raul']
+
+const mascotas = perros.concat(gatos)
+console.log(mascotas) */
+
+// Slice
+/* console.log(lista.slice(2,4)) */
+
+// indexof--indica la posición de un valor en especifico
+/* let pos = lista.indexOf(25)
+console.log(lista.splice(pos,1)) */
+
+// Includes--
+
+/* console.log(lista.includes(10))
+console.log(lista.includes(25)) */
+
+//Reverse--revertir una lista
+
+/* lista.reverse()
+console.log(lista) */
+
+// buscar en youtube
+//.find
+//.filter
+//.map
+//.reduce
+//.findindexof
+
+//Desafío Entregable N°1
+
+let nota1, nota2, nota3
+let dato1, dato2, dato3, media
+dato1 =prompt('Primera nota', '0')
+nota1 = parseInt(dato1)
+dato2 =prompt('Segunda nota', '0')
+nota2 = parseInt(dato2)
+dato3 =prompt('Tercera nota', '0')
+nota3 = parseInt(dato3)
+
+media = (nota1 + nota2 + nota3)/3
+
+if(media>=4){
+    alert('Aprobado')
+}
+else{
+    alert('Reprobado')
+}
+
+console.log('Finalizado')
+
