@@ -376,23 +376,149 @@ console.log(lista) */
 
 //Desafío Entregable N°1
 
-let nota1, nota2, nota3
+/* let nota1, nota2, nota3
 let dato1, dato2, dato3, media
-dato1 =prompt('Primera nota', '0')
-nota1 = parseInt(dato1)
-dato2 =prompt('Segunda nota', '0')
+nota1 =prompt("Ingresa nota 1")
+nota1 = parseInt(nota1)
+if (dato1)
+nota2 =prompt("Ingresa nota 2")
 nota2 = parseInt(dato2)
-dato3 =prompt('Tercera nota', '0')
+nota3 =prompt("Ingresa nota 3")
 nota3 = parseInt(dato3)
 
 media = (nota1 + nota2 + nota3)/3
 
 if(media>=4){
-    alert('Aprobado')
+    alert('Aprobado');
 }
 else{
-    alert('Reprobado')
+    alert('Reprobado');
 }
 
-console.log('Finalizado')
+console.log('Finalizado') */
 
+//Carrito de compras
+
+/* class CarritoDeCompras {
+    constructor() {
+        this.productos = []
+        this.name = ''
+        this.total = 0
+    }
+    setName(value) {
+        this.name = value
+    }
+
+    addProduct(product) {
+        this.productos.push(product)
+    }
+
+    removeLastProduct() {
+        this.productos.pop()
+    }
+
+    removeFirstProduct() {
+        this.productos.shift()
+    }
+
+    getTotal() {
+        for (const A of this.productos) {
+            console.log(A)
+            this.total = this.total + A.price
+        }
+        console.log('---------');
+        for (let index = 0; index < this.productos.length; index++) {
+            const producto = this.productos[index]
+            console.log(producto);
+            this.total = producto.price + this.total 
+        }
+        
+        // console.log(this.total)
+        // 0 producto =  {name:'Arroz',price:3}
+        // 1 producto =  {name:'Azucar',price:3}
+        // 2 producto =  {name:'Soda',price:3}
+        // 3 producto =  {name:'Pollo',price:3}
+        // 4 producto =  {name:'Carne',price:3}
+
+    }
+}
+class Product {
+    constructor(name, price) {
+        this.name = name
+        this.price = price
+    }
+}
+
+const cliente = new CarritoDeCompras()
+cliente.setName('Alex Paredes')
+
+const p1 = new Product('Arroz', 3)
+const p2 = new Product('Azucar', 2)
+const p3 = new Product('Soda', 5)
+const p4 = new Product('Pollo', 10)
+const p5 = new Product('Carne', 15)
+
+cliente.addProduct(p1)
+cliente.addProduct(p2)
+cliente.addProduct(p3)
+cliente.addProduct(p4)
+cliente.addProduct(p5)
+cliente.getTotal() */
+
+// after
+
+/* class Producto {
+    constructor(nombre, precio, cantidad){
+        this.nomre = nombre
+        this.precio = precio
+    }
+    mostrarProducto(){}
+}
+// cuando se escribe new y la clase se invoca al constructor
+const producto1 = new Producto('Pizza Muzarella', 1020, 2);
+
+const producto2 = new Producto('Sandwish de Bondiola', 900, 1);
+
+const producto3 = new Producto('Papas Chedar', 700, 1);
+
+class DetallePedido{
+    constructor(producto, cantidad){
+        this.producto = producto;
+        this.cantidad = cantidad;
+    }
+    //metodo o funcion
+    calcularSubtotal(){
+        let subtotal = this.producto.precio * this.cantidad;
+        return subtotal;
+    }
+    mostrarDetalle(){}
+}
+
+const detallePedido1 = new DetallePedido(producto1, 2);
+const detallePedido2 = new DetallePedido(producto2, 2);
+const detallePedido3 = new DetallePedido(producto3, 2);
+// solo para visualizarlo en la consola
+console.log(detallePedido1, detallePedido2, detallePedido3)
+
+class Pedido{
+    constructor(fecha, detalles){
+        this.fecha = fecha;
+        this.detalles = detalles;
+    }
+    calcularTotal(){
+        // usar for of para ir acumulando el pedido
+        let total = 0;
+        for(const detalle of this.detalles){
+            total = total + detalle.calcularSubtotal();
+    }
+    mostrarPedido8(){}
+}
+
+const array = [];
+array.push(detallePedido1);
+array.push(detallePedido2);
+array.push(detallePedido3);
+
+const pedido1 = new Pedido(new Date(), array);
+
+console.log(pedido1.calcularTotal()); */
