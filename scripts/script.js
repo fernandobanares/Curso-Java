@@ -3,47 +3,28 @@ let title = document.getElementById("title")
 let showAllProducts = document.getElementById("showAllProducts")
 const div = document.querySelector('.div')
 
+console.log(showAllProducts)
+
+
 
 
 // MOSTRAR PRODUCTOS //
-function mostrarProductos() {
-    products.forEach((product) => {
-//         let Card = document.createElement('div')
-//         Card.innerHTML += ` 
-//         <img src="${element.img}">
-//         <h3>${element.name}</h3>
-//         <h3>$${element.price}</h3>
-//         <button class="eliminar" data-id=${element.id}>X</button>`
-// div.appendChild(Card)
-//     })
 
-        let card = document.createElement("div")
-        showAllProducts.append(card)
-        let img = document.createElement("img")
-        img.setAttribute("src", product.img)
-        let name = document.createElement("h3")
-        name.innerText = (product.name)
-        let price = document.createElement("p")
-        price.innerText = (product.price)
-        let buyButton = document.createElement("button")
-        buyButton.innerText = ("Agregar al carrito")
-        card.append(img, name, price, buyButton)
+let showProducts = document.getElementById("showProducts")
 
-        buyButton.addEventListener("click", function () {
-            cart.push(product)
-            alert("Agregaste " + product.name + " al carrito")
-            // divCart.innerHTML = ``
-            div.innerHTML = ``
-            showCart()
-        })
-    })
-}
+for(let product of products) {
+        const productCardContainer = document.createElement("div");
+        productCardContainer.classList.add("showAllProducts");
+        
+        productCardContainer.innerHTML = ` 
+        <img src="${product.img}">
+        <h3>${product.name}</h3>
+        <h3>$${product.price}</h3>
+        <button class="eliminar" data-id=${product.id}>Comprar</button>`
+showAllProducts.appendChild(productCardContainer)
+    }
 
-
-
-mostrarProductos()
-
-// FILTRAR PRODUCTOS // 
+    // FILTRAR PRODUCTOS // 
 let buscador = document.getElementById("inputSearch")
 let filtrar = document.getElementById("filtrar")
 
@@ -84,4 +65,3 @@ filtrar.onclick = () => {
     showAllProducts.innerHTML = ``
     filtrarPorCat()
 }
-
