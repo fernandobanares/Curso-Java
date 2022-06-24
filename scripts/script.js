@@ -3,7 +3,7 @@ let title = document.getElementById("title")
 let showAllProducts = document.getElementById("showAllProducts")
 const div = document.querySelector('.div')
 
-console.log(showAllProducts)
+// console.log(showAllProducts)
 
 
 
@@ -20,7 +20,7 @@ for(let product of products) {
         <img src="${product.img}">
         <h3>${product.name}</h3>
         <h3>$${product.price}</h3>
-        <button class="eliminar" data-id=${product.id}>Comprar</button>`
+        <button class="comprar" id=${product.name}>Comprar</button>`
 showAllProducts.appendChild(productCardContainer)
     }
 
@@ -64,4 +64,76 @@ buscador.onchange = () => {
 filtrar.onclick = () => {
     showAllProducts.innerHTML = ``
     filtrarPorCat()
+}
+
+// Carrito 2
+
+const cart = []
+
+const buttonsComprar = document.getElementsByClassName("comprar")
+
+// console.log(buttonComprar);
+
+function findAndAddProduct(id){
+    
+    const product = products.find( product => product.name === id);
+
+    // console.log(product);
+
+    cart.push(product);
+
+    // console.log(cart);
+}
+
+
+for(const buttonComprar of buttonsComprar){
+
+    buttonComprar.addEventListener("click", (e) => {
+        
+        // console.log("click");
+
+        // console.log(e.target);
+
+        const buttonID = e.target.id;
+
+        // console.log(buttonID);
+
+        findAndAddProduct(buttonID);
+
+        renderCart();
+    })
+}
+
+const cartBtn = document.getElementById("cartBtn");
+
+const visualCart = document.getElementById("visualCart");
+
+cartBtn.addEventListener("click", () =>{
+
+    // console.log(visualCart.style.bottom);
+
+    if (visualCart.style.bottom === "-300px" || visualCart.style.bottom === ''){
+    visualCart.style.bottom =0;
+}
+else{
+    visualCart.style.bottom = "-300px"
+}
+
+});
+
+
+function renderCart(){
+
+    visualCart.innerHTML = '';
+
+    for(const cartItem of cart){
+
+        const cartItemContainer = document.createElement('div');
+
+        cartItemContainer.innerHTML = `<p>${cartItem.name} </p>`;
+
+        visualCart.appendChild(cartItemContainer);
+
+    }
+    
 }

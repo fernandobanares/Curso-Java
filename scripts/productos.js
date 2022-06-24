@@ -3,7 +3,7 @@ const products =[
       id: "1",
       category: "carteras",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis consectetur arcu a ultrices. Praesent rutrum lobortis mi at laoreet. Etiam nec sapien at dolor aliquet consequat non in mi. Vivamus mollis placerat lorem, condimentum laoreet felis tristique eu. Proin id urna ligula. Mauris facilisis tellus eros, rutrum maximus erat dictum ut. ",
-      name: "Cartera 1",
+      name: "Cartera1",
       price: " 15000",
       img: "../img/cartera 1.png",
       color: "Rojo"
@@ -12,7 +12,7 @@ const products =[
       id: "2",
       category: "carteras",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis consectetur arcu a ultrices. Praesent rutrum lobortis mi at laoreet. Etiam nec sapien at dolor aliquet consequat non in mi. Vivamus mollis placerat lorem, condimentum laoreet felis tristique eu. Proin id urna ligula. Mauris facilisis tellus eros, rutrum maximus erat dictum ut. ",
-      name: "Cartera 2",
+      name: "Cartera2",
       price: " 15000",
       img: "../img/cartera 2.png",
       color: "Negro"
@@ -21,7 +21,7 @@ const products =[
       id: "3",
       category: "carteras",
       description: "Cartera de material textil de poliéster. Doble asa corta y asa larga regulable. Cierre de cremallera. Bolsillo interno. Forrería interior.",
-      name: "Cartera 3",
+      name: "Cartera3",
       price: " 15000",
       img: "../img/carterita.jpg",
       color: "Negro y Rojo"
@@ -40,7 +40,7 @@ const products =[
       id: "5",
       category: "Neceseres",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis consectetur arcu a ultrices. Praesent rutrum lobortis mi at laoreet. Etiam nec sapien at dolor aliquet consequat non in mi. Vivamus mollis placerat lorem, condimentum laoreet felis tristique eu. Proin id urna ligula. Mauris facilisis tellus eros, rutrum maximus erat dictum ut. ",
-      name: "Neceser 1",
+      name: "Neceser1",
       price: " 12000",
       img: "../img/bolso nesecer.jpg",
       color: "Blanco"
@@ -49,7 +49,7 @@ const products =[
       id: "6",
       category: "Neceseres",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis consectetur arcu a ultrices. Praesent rutrum lobortis mi at laoreet. Etiam nec sapien at dolor aliquet consequat non in mi. Vivamus mollis placerat lorem, condimentum laoreet felis tristique eu. Proin id urna ligula. Mauris facilisis tellus eros, rutrum maximus erat dictum ut. ",
-      name: "Neceser 2",
+      name: "Neceser2",
       price: " 12000",
       img: "../img/neceser 1.png",
       color: "Varios"
@@ -58,7 +58,7 @@ const products =[
       id: "7",
       category: "Bolsos",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis consectetur arcu a ultrices. Praesent rutrum lobortis mi at laoreet. Etiam nec sapien at dolor aliquet consequat non in mi. Vivamus mollis placerat lorem, condimentum laoreet felis tristique eu. Proin id urna ligula. Mauris facilisis tellus eros, rutrum maximus erat dictum ut. ",
-      name: "Bolso 2",
+      name: "Bolso2",
       price: " 18000",
       img: "../img/bolso4.jpg",
       color: "Blanco y Negro"

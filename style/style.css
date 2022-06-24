@@ -55,7 +55,7 @@ h1 {
 
 }
 
-#cartList {
+/* #cartList {
     height: 500px;
     width: 50%;
     display: flex;
@@ -70,7 +70,7 @@ h1 {
 .showCart {
     display: flex;
     flex-direction: row;
-}
+} */
 .div{
     display: flex;
     flex-direction: column;
@@ -115,4 +115,13 @@ h1 {
     text-align: center;
     margin-top: 2em;
     margin-left: 45%;
+}
+
+#visualCart{
+    height:300px;
+    width:100vw;
+    background-color: black;
+    position:fixed;
+    bottom:-300px;
+    color:white;
 }
