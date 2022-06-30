@@ -1,75 +1,66 @@
-const products =[
-    {
-      id: "1",
-      category: "carteras",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis consectetur arcu a ultrices. Praesent rutrum lobortis mi at laoreet. Etiam nec sapien at dolor aliquet consequat non in mi. Vivamus mollis placerat lorem, condimentum laoreet felis tristique eu. Proin id urna ligula. Mauris facilisis tellus eros, rutrum maximus erat dictum ut. ",
-      name: "Cartera1",
-      price: " 15000",
-      img: "../img/cartera 1.png",
-      color: "Rojo"
-    },
-    {
-      id: "2",
-      category: "carteras",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis consectetur arcu a ultrices. Praesent rutrum lobortis mi at laoreet. Etiam nec sapien at dolor aliquet consequat non in mi. Vivamus mollis placerat lorem, condimentum laoreet felis tristique eu. Proin id urna ligula. Mauris facilisis tellus eros, rutrum maximus erat dictum ut. ",
-      name: "Cartera2",
-      price: " 15000",
-      img: "../img/cartera 2.png",
-      color: "Negro"
-    },
-    {
-      id: "3",
-      category: "carteras",
-      description: "Cartera de material textil de poliéster. Doble asa corta y asa larga regulable. Cierre de cremallera. Bolsillo interno. Forrería interior.",
-      name: "Cartera3",
-      price: " 15000",
-      img: "../img/carterita.jpg",
-      color: "Negro y Rojo"
-    },
-    {
-      id: "4",
-      category: "Bolsos",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis consectetur arcu a ultrices. Praesent rutrum lobortis mi at laoreet. Etiam nec sapien at dolor aliquet consequat non in mi. Vivamus mollis placerat lorem, condimentum laoreet felis tristique eu. Proin id urna ligula. Mauris facilisis tellus eros, rutrum maximus erat dictum ut. ",
-      name: "Bolsito",
-      description: "Bowling con bolsillo frontal. Doble asa corta y asa larga regulable. Cierre de cremallera. Bolsillo interno. Forrería interior.",
-      price: " 18000",
-      img: "../img/bolsito.jpg",
-      color: "Rojo"
-    },
-    {
-      id: "5",
-      category: "Neceseres",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis consectetur arcu a ultrices. Praesent rutrum lobortis mi at laoreet. Etiam nec sapien at dolor aliquet consequat non in mi. Vivamus mollis placerat lorem, condimentum laoreet felis tristique eu. Proin id urna ligula. Mauris facilisis tellus eros, rutrum maximus erat dictum ut. ",
-      name: "Neceser1",
-      price: " 12000",
-      img: "../img/bolso nesecer.jpg",
-      color: "Blanco"
-    },
-    {
-      id: "6",
-      category: "Neceseres",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis consectetur arcu a ultrices. Praesent rutrum lobortis mi at laoreet. Etiam nec sapien at dolor aliquet consequat non in mi. Vivamus mollis placerat lorem, condimentum laoreet felis tristique eu. Proin id urna ligula. Mauris facilisis tellus eros, rutrum maximus erat dictum ut. ",
-      name: "Neceser2",
-      price: " 12000",
-      img: "../img/neceser 1.png",
-      color: "Varios"
-    },
-    {
-      id: "7",
-      category: "Bolsos",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis consectetur arcu a ultrices. Praesent rutrum lobortis mi at laoreet. Etiam nec sapien at dolor aliquet consequat non in mi. Vivamus mollis placerat lorem, condimentum laoreet felis tristique eu. Proin id urna ligula. Mauris facilisis tellus eros, rutrum maximus erat dictum ut. ",
-      name: "Bolso2",
-      price: " 18000",
-      img: "../img/bolso4.jpg",
-      color: "Blanco y Negro"
-    },
-    {
-      id: "8",
-      category: "Monederos",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis consectetur arcu a ultrices. Praesent rutrum lobortis mi at laoreet. Etiam nec sapien at dolor aliquet consequat non in mi. Vivamus mollis placerat lorem, condimentum laoreet felis tristique eu. Proin id urna ligula. Mauris facilisis tellus eros, rutrum maximus erat dictum ut. ",
-      name: "Monederos",
-      price: " 8000",
-      img: "../img/monederos.png",
-      color: "Varios"
-    }
-  ]
+let productos = [
+  {
+      "id":"001",
+      "nombre":"Cartera1",
+      "categoria":"cartera",
+      "precio":5000,
+      "img":"./multimedia/cartera1.png",
+      "desc": "" 
+  },
+  {
+      "id":"002",
+      "nombre":"Cartera2",
+      "categoria":"cartera",
+      "precio":5500,
+      "img":"./multimedia/cartera2.png",
+      "desc": "" 
+  },
+  {
+      "id":"003",
+      "nombre":"Cartera3",
+      "categoria":"cartera",
+      "precio":6000,
+      "img":"./multimedia/cartera3.jpg",
+      "desc": "" 
+  },
+  {
+      "id":"004",
+      "nombre":"Cartera4",
+      "categoria":"cartera",
+      "precio":6500,
+      "img":"./multimedia/cartera4.jpg",
+      "desc": "" 
+  },
+  {
+      "id":"005",
+      "nombre":"Monederos",
+      "categoria":"monedero",
+      "precio":7000,
+      "img":"./multimedia/monederos.png",
+      "desc": "" 
+  },
+  {
+      "id":"006",
+      "nombre":"Neceser1",
+      "categoria":"neceser",
+      "precio":7500,
+      "img":"./multimedia/neceser1.png",
+      "desc": "" 
+  },
+  {
+      "id":"007",
+      "nombre":"Neceser2",
+      "categoria":"neceser",
+      "precio":8000,
+      "img":"./multimedia/neceser2.jpg",
+      "desc": "" 
+  },
+  {
+      "id":"008",
+      "nombre":"Neceser3",
+      "categoria":"neceser",
+      "precio":8500,
+      "img":"./multimedia/neceser3.jpg",
+      "desc": "" 
+  }
+];

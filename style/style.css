@@ -125,3 +125,19 @@ h1 {
     bottom:-300px;
     color:white;
 }
+
+.buttonDeleteCart{
+    background-color:mediumpurple;
+    width: 60px;
+}
+
+.txtCarrito{
+    text-align: center;
+    color: black;
+    margin: 30px;
+}
+
+.tableContainer{
+    display: flex;
+    justify-content: center;
+}
