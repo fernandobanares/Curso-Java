@@ -67,9 +67,17 @@ body.innerHTML += texto;
                 tbody.innerHTML += cart
             }
 }
-
+const showAlert = () => {
+    Swal.fire({
+        title:'Estimado',
+        text:'Tu Carrito esta vacío',
+        icon:'Error',
+        confirmButtonText:'Seguir Comprando'
+    })
+}
 
 const btnBorrarCarrito = document.getElementById('buttonDeleteCart')
+btnBorrarCarrito.onclick = showAlert;
 btnBorrarCarrito.addEventListener("click", () => {
     //    console.log(carrito)
     carrito = []
@@ -78,6 +86,7 @@ btnBorrarCarrito.addEventListener("click", () => {
     totalCarrito()
     tbody.innerHTML = ''
     })
+
 
 
 

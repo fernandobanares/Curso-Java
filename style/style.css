@@ -126,7 +126,8 @@ h1 {
     color:white;
 }
 
-.buttonDeleteCart{
+#buttonDeleteCart{
+    
     background-color:mediumpurple;
     width: 60px;
 }
@@ -141,3 +142,103 @@ h1 {
     display: flex;
     justify-content: center;
 }
+
+table{
+    border-radius: 5px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table tr th:first-child{
+    width: 80px;
+}
+
+table tr th:nth-child(2){
+    width: 300px;
+}
+
+thead tr th{
+    background: #392569;
+    color: #E9EEF2; 
+}
+
+thead tr th:first-child{
+    border-radius: 10px 0px 0px 0px;
+}
+
+thead tr th:last-child{
+    border-radius: 0px 10px 0px 0px;
+}
+
+
+tbody tr:nth-child(even){
+    background: #a179c7;
+}
+
+tbody tr:nth-child(odd){
+    background: #7e1194;
+}
+
+tfoot tr th{
+    background: #5b3289;
+    color: #efe9f2;
+}
+
+tfoot tr th:first-child{
+    border-radius: 0px 0px 0px 10px;
+}
+
+
+tfoot tr th:last-child{
+    border-radius: 0px 0px 10px 0px;
+}
+
+th{
+    background: transparent;
+}
+
+.imgProdCart{
+    width: 80px;
+    margin: 3px;
+    border-radius: 5px;
+}
+
+.detallesTabla{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.trash{
+    width: 30px;
+}
+
+.nombreProd{
+    padding-left: 10px;
+}
+
+.txtTotal{
+    text-align: right;
+    padding: 10px;
+}
+
+.txtTabla{
+    padding: 10px;
+    font-size: 20px;
+}
+
+.btnTerminar{
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #dd2313;
+    font-family: Lato-Black;
+    transition: 0.5s ease;
+    border: none;
+}
+
+.btnTerminar:hover{
+    color: #E9EEF2;
+    background: #dd2313;
+}
+
