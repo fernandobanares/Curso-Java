@@ -69,26 +69,82 @@ body.innerHTML += texto;
 }
 
 
-const btnBorrarCarrito = document.getElementsByClassName('buttonDeleteCart')
-const element = buttonDeleteCart
-element.addEventListener('click', VaciarCarrito)
+const btnBorrarCarrito = document.getElementById('buttonDeleteCart')
+btnBorrarCarrito.addEventListener("click", () => {
+    //    console.log(carrito)
+    carrito = []
+    // console.log(carrito)
+    localStorage.setItem('carrito',JSON.stringify([]))
+    totalCarrito()
+    tbody.innerHTML = ''
+    })
 
-// function VaciarCarrito
 
 
-// buttonDeleteCart.innerText = "Eliminar compra"
-//         detalleCompra.appendChild(buttonDeleteCart)
-//         buttonDeleteCart.setAttribute ("class", "buttonDeleteCart")
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// btnBorrarCarrito [0] 
+// const element = buttonDeleteCart
+// btnBorrarCarrito.addEventListener('click', VaciarCarrito)
+// btnBorrarCarrito.addEventListener("click", () => {
+//     VaciarCarrito()
+// })
+
+// function VaciarCarrito () {
+
+
+// btnBorrarCarrito.innerText = "Eliminar compra"
+//         detalleCompra.appendChild(btnBorrarCarrito)
+//         btnBorrarCarrito.setAttribute ("id", "buttonDeleteCart")
 //         buttonDeleteCart.onclick = () => {
 //             carrito = []
 //             detalleCompra.innerHTML=``
 //             console.log(carrito)
 //         }
-
+// }
         // const btnAgregar = document.getElementsByClassName('btnAgregar')
 
 // for (let i = 0; i < btnAgregar.length; i++) {
 //     const element = btnAgregar[i];
 //     element.addEventListener('click', agregarAlCarrito)
 // }
+
+// otra opcion eliminar carrito
+
+// let eliminarcompra=document.querySelector(".eliminar")
+
+
+// const total1 = carrito.map((element)=> (element.precio)).reduce((carritoTotalPrecio,
+//     currenItemPrecio)=> carritoTotalPrecio + currenItemPrecio, 0);
+  
+
+// let totalDeCompra=document.createElement("h4")
+//     totalDeCompra.innerHTML=("TOTAL:" + "$" + total1.toLocaleString())
+//     div.append(totalDeCompra)
+
+// let vaciarCarrito =document.createElement("button")
+//  vaciarCarrito.innerHTML=("Desechar Todo")
+//  vaciarCarrito.setAttribute("class","desechar")
+//  div.append(vaciarCarrito)
+  
+//  vaciarCarrito.onclick=()=>{
+//     carrito=[]
+//     div.innerHTML=``
+//     console.log(carrito)
+//  }
 
